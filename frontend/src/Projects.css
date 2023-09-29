@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+  }
+  
+
+  .body{
+    display:flex;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .flex-container {
+    position: relative;
+    width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(370px,1fr));
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin: 50px;
+  }
+  
+  .flex-item{
+    padding: 10px;
+  }
+  @media (max-width: 800px) {
+    .flex-container {
+      flex-direction: column;
+    }
+  }
+
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 350px;
+    height: 410px;
+    font-family: arial;
+    padding: 12px;
+    border-radius: 20px;
+  }
+
+  span{
+    font-size: 13px;
+    color: rgb(169, 169, 169);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+  }
+
+  .slider{
+    background-color: white;
+  }
+
+  .slide{
+    padding-top: 80px;
+    margin-left: 30px;
+  }
+
+  .details p{
+    font-size: 18.5px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .details p span{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+  }
+
+  .button_panel{
+    margin-left: 13px;
+    border-radius: 4px;
+    border: none;
+    background-color: #0094d9;
+    color: white;
+    font-weight: 500;
+    padding: 5px;
+  }
+
+  .button1{
+    background-color: white;
+    color:#0094d9 ;
+    border: none;
+  }
+
+
+  .header{
+    background-color: #722F37;
+    height: 60px;
+    display: flex;
+    position: sticky;
+    align-items: center;
+    top: 0;
+    z-index: 100;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 80px;
+  }
+
+  @media (max-width: 800px)
+  {
+      .header{
+      padding-left: 10px;
+      padding-right: 10px;
+      }
+  }
+
+  a{
+      text-decoration: none;
+      color: white;
+      font-size: 16px;
+  }
+
+
+  .search{
+    border:1px solid #491a20;
+    border-radius: 12px;
+    padding: 4px;
+    padding-left: 10px;
+    outline: none;
+    background-color: #9b4851;
+    color: #edebec;
+  }
+  .search::placeholder{
+    color: #edebec;
+  }
+
+  @media (max-width: 800px)
+  {
+    .header{
+      font-size: small;
+    }
+    .search{
+      width: 150px;
+      font-size: medium;
+    }
+    .search::placeholder{
+      font-size: medium;
+    }
+  }
